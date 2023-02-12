@@ -1,15 +1,9 @@
-{{title}}
-<ul class="foo" style="color:red">
-  <li *ngFor="let post of posts; index as in">{{post.userId}} - {{post.id}} - {{post.title}}</li>
-</ul>
-<button (click)="isDanger = !isDanger">Toggle Danger</button> <br/>
-<button (click)="isWarning = !isWarning">Togger Warning</button>
-
-<div [class]="classes"></div>
-<p style="color: red" [style.background]="'yellow'" [style.fontSize.em]="2">
-  Start editing to see some magic happen
+<p>
+  Start ending to see magic happen :))
 </p>
 
-
-
-
+<button (click)="currentProgress = currentProgress + 1">Increase Progress</button>
+<button (click)="currentProgress = currentProgress - 1">Down Progress</button>
+<progress-bar [progress]="currentProgress"></progress-bar>
+<br>
+<progress-bar [progress]="currentProgress" [progress]="80" [progressColor]="'dodgerblue'"></progress-bar>
