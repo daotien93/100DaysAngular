@@ -12,7 +12,7 @@ import {Component, Input, OnChanges, OnInit} from "@angular/core";
           [style]="{
               backgroundColor: progressColor,
               width: progress + '%'
-          }"
+          // }"
         >
         </div>
         </div>
